@@ -11,6 +11,6 @@
    )
 }}
 
-select * from {{ source('_postgres__sources_orders','orders') }}
+select * from {{ source('_postgres__sources','orders') }}
 
 {% endsnapshot %}

@@ -1,3 +1,8 @@
+{{
+  config(
+    materialized='table'
+  )
+}}
 
 SELECT CREATED_AT
 ,EVENT_ID
