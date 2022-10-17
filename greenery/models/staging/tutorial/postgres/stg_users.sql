@@ -13,5 +13,5 @@ SELECT ADDRESS_ID
 ,UPDATED_AT
 ,USER_ID
 
-FROM raw.public.USERS
+                       FROM {{ source('_postgres__sources', 'users') }}
                      

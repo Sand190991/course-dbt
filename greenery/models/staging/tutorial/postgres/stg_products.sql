@@ -8,5 +8,5 @@ SELECT INVENTORY
 ,NAME
 ,PRICE
 ,PRODUCT_ID
-                       FROM raw.public.PRODUCTS
+                       FROM {{ source('_postgres__sources', 'products') }}
                      

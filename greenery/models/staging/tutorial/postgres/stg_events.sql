@@ -12,5 +12,5 @@ SELECT CREATED_AT
 ,PRODUCT_ID
 ,SESSION_ID
 ,USER_ID
-FROM raw.public.events
+                       FROM {{ source('_postgres__sources', 'events') }}
                      

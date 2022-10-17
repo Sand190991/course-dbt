@@ -7,5 +7,5 @@
 SELECT DISCOUNT
 ,PROMO_ID
 ,STATUS
-                       FROM raw.public.PROMOS
+                       FROM {{ source('_postgres__sources', 'promos') }}
                      

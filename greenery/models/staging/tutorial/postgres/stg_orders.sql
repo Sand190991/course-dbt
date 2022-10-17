@@ -17,5 +17,5 @@ SELECT ORDER_ID
                             , ORDER_COST
                             , SHIPPING_COST
                             , ORDER_TOTAL
-                       FROM raw.public.orders
+                       FROM {{ source('_postgres__sources', 'orders') }}
                      

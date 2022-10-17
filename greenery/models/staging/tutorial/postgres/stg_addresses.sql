@@ -9,5 +9,5 @@ SELECT ADDRESS
 ,COUNTRY
 ,STATE
 ,ZIPCODE
-                       FROM raw.public.addresses
-                     
+                       
+                        FROM {{ source('_postgres__sources', 'addresses') }}                    
