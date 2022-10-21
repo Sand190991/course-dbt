@@ -7,6 +7,6 @@
 SELECT ORDER_ID,
 PRODUCT_ID,
 QUANTITY
-                       FROM raw.public.order_items
+                       FROM {{ source('_postgres__sources', 'order_items') }}
                        
                      

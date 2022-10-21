@@ -18,7 +18,7 @@ sources:
     tables:
       - name: addresses 
       - name: events 
-      - name: orderitems 
+      - name: order_items 
       - name: orders 
         loaded_at_field: created_at
       - name: products 
